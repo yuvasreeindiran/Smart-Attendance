@@ -1,0 +1,29 @@
+<!-- templates/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attendance Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Smart Face Attendance System</h1>
+
+  <div class="controls">
+    <button onclick="startRecognizer()">Start</button>
+    <button onclick="stopRecognizer()">Stop</button>
+    <button onclick="updateAttendance()">View Attendance</button>
+  </div>
+
+  <table id="attendanceTable">
+    <tr><th>Name</th><th>Time</th></tr>
+    {% for name, time in attendance %}
+    <tr><td>{{ name }}</td><td>{{ time }}</td></tr>
+    {% else %}
+    <tr><td colspan="2">No attendance recorded yet.</td></tr>
+    {% endfor %}
+  </table>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

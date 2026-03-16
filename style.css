@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    padding: 40px;
+    text-align: center;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.buttons {
+    margin: 20px 0;
+}
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #45a049;
+}
+table {
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf7ff;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+.controls {
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: white;
+}
+th, td {
+    border: 1px solid #888;
+    padding: 10px;
+}
